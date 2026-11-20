@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-wallpaper-machine",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use your local WallpaperMachine library as the DeepSeek Harness background: browse every wallpaper in Settings, render Scene wallpapers live, play Video wallpapers, and show Image wallpapers behind the chat. macOS, no Wallpaper Engine required.",
   "type": "module",
   "scripts": {
