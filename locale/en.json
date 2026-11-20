@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Wallpaper Machine",
+    "description": "Bring your macOS WallpaperMachine library into DSH: scene wallpapers render live through WebWallGL, videos and images play behind the chat.",
+    "detail": "docs/DETAIL.md"
+  }
+}

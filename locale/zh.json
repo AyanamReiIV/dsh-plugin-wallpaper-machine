@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "壁纸机",
+    "description": "把 macOS 上 WallpaperMachine 的壁纸库接入 DSH：场景壁纸由 WebWallGL 实时渲染，视频与图片直接作为聊天背景播放。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

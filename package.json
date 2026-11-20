@@ -1,0 +1,71 @@
+{
+  "name": "dsh-plugin-wallpaper-machine",
+  "version": "0.1.0",
+  "description": "Use your local WallpaperMachine library as the DeepSeek Harness background: browse every wallpaper in Settings, render Scene wallpapers live, play Video wallpapers, and show Image wallpapers behind the chat. macOS, no Wallpaper Engine required.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "start": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=22.12.0",
+    "dsh": "^0.2.0-rc.1"
+  },
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "scene-live/",
+    "vendor/",
+    "locale/",
+    "docs/",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "wallpaper",
+    "wallpaper-machine",
+    "macos",
+    "background",
+    "webwallgl"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyanamReiIV/dsh-plugin-wallpaper-machine.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/AyanamReiIV/dsh-plugin-wallpaper-machine#readme",
+  "bugs": {
+    "url": "https://github.com/AyanamReiIV/dsh-plugin-wallpaper-machine/issues"
+  }
+}

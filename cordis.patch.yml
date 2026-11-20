@@ -1,0 +1,10 @@
+# dsh-plugin-wallpaper-machine — bundle patch.
+#
+# Inserts one host row: the plugin that finds the WallpaperMachine library,
+# serves its media over same-origin HTTP and renders Scene wallpapers through
+# WebWallGL. The browser half ships in `dsh.client` (see package.json) and adds
+# the wallpaper layer plus the Settings → Wallpaper Machine page.
+
+- insert:
+    - id: wallpaper-machine
+      name: 'dsh-plugin-wallpaper-machine'
